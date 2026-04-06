@@ -25,6 +25,12 @@ embedded_instances {
   "}\\n"
   "\"\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"rocketfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/rocket.go\\\"\\n"
+  "\"\n"
+  "}\n"
   ""
   position {
     x: 137.0

@@ -1,4 +1,31 @@
 name: "main"
+instances {
+  id: "tank"
+  prototype: "/main/tank.go"
+  position {
+    x: 68.0
+    y: 75.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tank1"
+  prototype: "/main/tank.go"
+  position {
+    x: 127.0
+    y: 34.0
+    z: 1.0
+  }
+}
+instances {
+  id: "tank2"
+  prototype: "/main/tank.go"
+  position {
+    x: 190.0
+    y: 70.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -37,4 +64,12 @@ embedded_instances {
     y: 113.0
     z: 1.0
   }
+}
+embedded_instances {
+  id: "gui"
+  data: "components {\n"
+  "  id: \"ui\"\n"
+  "  component: \"/main/ui.gui\"\n"
+  "}\n"
+  ""
 }

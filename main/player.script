@@ -19,7 +19,10 @@ function update(self, dt)
 	end
 
 	if self.firing then
-		factory.create("#rocketfactory")
+		local angle = math.atan2(self.dir.y, self.dir.x)
+		local rot = vmath.quat_rotation_z(angle)
+		local props = {dir = self.dir}
+		factory.create("#rocketfactory", nil, rot, props)
 	end
 	
 	self.input.x = 0

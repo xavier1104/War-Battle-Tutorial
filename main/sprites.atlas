@@ -72,4 +72,56 @@ animations {
   playback: PLAYBACK_LOOP_FORWARD
   fps: 8
 }
+animations {
+  id: "player-up"
+  images {
+    image: "/assets/units/infantry/up/1.png"
+  }
+  images {
+    image: "/assets/units/infantry/up/2.png"
+  }
+  images {
+    image: "/assets/units/infantry/up/3.png"
+  }
+  images {
+    image: "/assets/units/infantry/up/4.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
+animations {
+  id: "player-left"
+  images {
+    image: "/assets/units/infantry/side/1.png"
+  }
+  images {
+    image: "/assets/units/infantry/side/2.png"
+  }
+  images {
+    image: "/assets/units/infantry/side/3.png"
+  }
+  images {
+    image: "/assets/units/infantry/side/4.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+  flip_horizontal: 1
+}
+animations {
+  id: "player-right"
+  images {
+    image: "/assets/units/infantry/side/1.png"
+  }
+  images {
+    image: "/assets/units/infantry/side/2.png"
+  }
+  images {
+    image: "/assets/units/infantry/side/3.png"
+  }
+  images {
+    image: "/assets/units/infantry/side/4.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
 extrude_borders: 2

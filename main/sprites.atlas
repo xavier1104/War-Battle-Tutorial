@@ -124,4 +124,35 @@ animations {
   playback: PLAYBACK_LOOP_FORWARD
   fps: 8
 }
+animations {
+  id: "player-idle"
+  images {
+    image: "/assets/units/infantry/down/2.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 8
+}
+animations {
+  id: "factory"
+  images {
+    image: "/assets/buildings/factory/1.png"
+  }
+  images {
+    image: "/assets/buildings/factory/2.png"
+  }
+  images {
+    image: "/assets/buildings/factory/3.png"
+  }
+  images {
+    image: "/assets/buildings/factory/4.png"
+  }
+  images {
+    image: "/assets/buildings/factory/5.png"
+  }
+  images {
+    image: "/assets/buildings/factory/6.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 8
+}
 extrude_borders: 2

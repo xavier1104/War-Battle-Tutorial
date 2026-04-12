@@ -1,31 +1,4 @@
 name: "main"
-instances {
-  id: "tank"
-  prototype: "/main/tank.go"
-  position {
-    x: 68.0
-    y: 75.0
-    z: 1.0
-  }
-}
-instances {
-  id: "tank1"
-  prototype: "/main/tank.go"
-  position {
-    x: 127.0
-    y: 34.0
-    z: 1.0
-  }
-}
-instances {
-  id: "tank2"
-  prototype: "/main/tank.go"
-  position {
-    x: 190.0
-    y: 70.0
-    z: 1.0
-  }
-}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -44,7 +17,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"player-down\\\"\\n"
+  "  data: \"default_animation: \\\"player-idle\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "textures {\\n"
   "  sampler: \\\"texture_sampler\\\"\\n"
@@ -72,4 +45,36 @@ embedded_instances {
   "  component: \"/main/ui.gui\"\n"
   "}\n"
   ""
+}
+embedded_instances {
+  id: "factory"
+  data: "components {\n"
+  "  id: \"factory\"\n"
+  "  component: \"/main/factory.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"factory\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/sprites.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 57.0\n"
+  "    y: 109.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"tankfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/tank.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    z: 1.0
+  }
 }

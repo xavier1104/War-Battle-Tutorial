@@ -33,6 +33,8 @@ local function update_animation(self)
 		sprite.play_flipbook("#sprite", "player-up")
 	elseif self.input.y == -1 then
 		sprite.play_flipbook("#sprite", "player-down")
+	else
+		sprite.play_flipbook("#sprite", "player-idle")
 	end
 end
 
